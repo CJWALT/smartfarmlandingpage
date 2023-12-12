@@ -7,19 +7,20 @@
     <title>Smart Farm ng</title>
     <link href="./styles/output.css" rel="stylesheet"/>
     <link href="./assets/styles/styles.css" rel="stylesheet"/>
+    
 </head>
 
 <body>
 
     <header class="bg-[#E6E6E6] py-[.6rem]">
         <div class="container">
-            <div>
+            <div class="flex flex-row justify-between items-center">
                 <div class=" ">
                     <img src="./assets/img/logo.png" alt="logo" class="w-[13rem]"/>
                 </div>
                 
                 <div class="hidden">
-                    <ul class="nav border-2 border-red-400">
+                    <ul class="nav">
                         <li><a href='#'>Who we are </a></li>
                         <li><a href='#'>Our Solutions </a</li>
                         <li><a href='#'>contact us </a></li>
@@ -30,143 +31,201 @@
                         <option value="kr">Korea</option>
                     </select>
                 </div>
-                <div class="">
+                <div>
+                    <ion-icon class="leading-none text-[2.6rem] cursor-pointer" name="menu-outline"></ion-icon>
+                      
+                </div>
+                <div class="hidden">
                     <a href='https://smartfarm-ng.vercel.app/'>Login</a>
-                    <a href="https://smartfarm-ng.vercel.app/signup">Sign Up</a>
+                    <a href='https://smartfarm-ng.vercel.app/signup'>Sign Up</a>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="py-8">
         <div class="container">
-            <div>
-                <p>Farming</p>
-                <p>Ease</p>
-                <p>Technologies</p>
+            <div class="grid-txt mx-10 py-14 overflow-hidden">
+                <span class="text-xl font-semibold z-20">Farming</span>
+                <span class="ease-btm text-xl z-20 font-semibold">Technologies</span>
+                <span class="top-right text-xl z-20 font-semibold">Ease</span>
             </div>
-            <button type="button">Get Started Now</button>
+            <div class="flex justify-center">
+                <button type="button" class="bg-green-200 z-20 px-10 font-semibold font-[Lato] py-[.4rem] rounded-md">Get Started Now</button>
+            </div>
         </div>
     </main>
 
     <section>
         <div class="container">
-            <div>
-                <p>
-                    SmartFarm NG is a plartform that offers  farmers technologies and insights to make data-driven decisions and take precise actions to maximize crop yield, minimize resource wastage, reduce environmental impact, and improve overall farm efficiency. 
+            <div class="py-8">
+                <p class="text-sm text-center text-txtGreen font-medium">
+                    SmartFarm NG is a platform that offers  farmers technologies and insights to make data-driven decisions and take precise actions to maximize crop yield, minimize resource wastage, reduce environmental impact, and improve overall farm efficiency. 
                 </p>
 
-                <div>
-                    <div>
-                        <img src="plant" alt="plant">
-                        <h5>Real-time Weather Data</h5>
+                <div class=" flex flex-col gap-7 items-center py-5">
+                    <div class="flex flex-col  items-center gap-4">
+                        <img src="./assets/img/plants.png" class="w-10" alt="plant">
+                        <h5 class="text-sm font-semibold text-txtGreen ">Real-time Weather Data</h5>
                     </div>
-                    <div>
-                        <img src="plant" alt="plant">
-                        <h5>Real-time Weather Data</h5>
+                    <div class="flex flex-col items-center gap-4">
+                        <img src="./assets/img/plants.png" class="w-10" alt="plant">
+                        <h5 class="text-sm font-semibold text-txtGreen ">Soil Quality Analysis</h5>
                     </div>
-                    <div>
-                        <img src="plant" alt="plant">
-                        <h5>Real-time Weather Data</h5>
+                    <div class="flex flex-col items-center gap-4">
+                        <img src="./assets/img/plants.png" class="w-10" alt="plant">
+                        <h5 class="text-sm font-semibold text-txtGreen">Data Insight</h5>
                     </div>
-                    <div>
-                        <img src="plant" alt="plant">
-                        <h5>Real-time Weather Data</h5>
+                    <div class="flex flex-col items-center gap-4">
+                        <img src="./assets/img/plants.png" class="w-10" alt="plant">
+                        <h5 class="text-sm font-semibold text-txtGreen ">Product Recommendation</h5>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <span>Increase Yield and Quality</span>
-                        <span>Precision farmings with our Recommendations</span>
-                        <span>Prevent and Monitor</span>
-                        <span>Attain Sustainable Profit & Growth</span>
+                    <h3 class="text-xl font-bold text-txtGreen text-center"> What SmartFarm NG can help you achieve</h3>
+                    <div class="flex flex-col gap-[1rem] items-center mt-[2rem]">
+                        <span class="border-2 w-[10rem] py-[2.5rem] px-[1rem] text-[.9rem] rounded-[.4rem]  flex flex-col justify-center text-center border-red-400">Increase Yield & Quality</span>
+                        <span class="border-2 w-[10rem] py-[2.5rem] px-[1rem] text-[.9rem] rounded-[.4rem]  flex flex-col justify-center text-center border-red-400">Precision farmings with our Recommendations</span>
+                        <span class="border-2 w-[10rem] py-[2.5rem] px-[1rem] text-[.9rem] rounded-[.4rem]  flex flex-col justify-center text-center border-red-400">Prevent and Monitor</span>
+                        <span class="border-2 w-[10rem] py-[2.5rem] px-[1rem] text-[.9rem] rounded-[.4rem]  flex flex-col justify-center text-center border-red-400">Attain Sustainable Profit & Growth</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-[#E6E6E6] p-[2rem]">
         <div class="container">
-            <h2>Our Technology</h2>
-            <p>Get real time information and recommendation based on data that you provide.</p>
+            <h2 class=" text-[2rem] text-center mb-[.5rem] font-bold text-txtGreen">Our Technology</h2>
+            <p class="leading-[1.2rem] text-[.9rem] mb-[.5rem] font-bold text-center text-txtGreen">Get real time information and recommendation based on data that you provide.</p>
 
-            <div>
-                <div>
-                    icon
+            <div class="bg-white p-[2rem] shadow-lg rounded-[.4rem] flex flex-col gap-[.5rem] items-center">
+                <div class="flex flex-row gap-[.5rem] w-[16rem] border-2 border-red-400">
+                    <div>
+                        icon
+                    </div>
+                    <div class="">
+                        <h4 class="font-medium text-[1rem] mb-[.6rem]">
+                            FARM MAPPING
+                        </h4>
+                        <p class="font-medium text-[.7rem] leading-[1.1rem]">Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </p>
+                    </div>
+                    
                 </div>
-                <h4>
-                    Farm mapping
-                </h4>
-                <small>Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </small>
-            </div>
-            <div>
-                <div>
-                    icon
+                <div class="flex flex-row gap-[.5rem] w-[16rem] border-2 border-red-400">
+                    <div>
+                        icon
+                    </div>
+                    <div class="">
+                        <h4 class="font-medium text-[1rem] mb-[.6rem]">
+                            FARM MAPPING
+                        </h4>
+                        <p class="font-medium text-[.7rem] leading-[1.1rem]">Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </p>
+                    </div>
+                    
                 </div>
-                <h4>
-                    Farm mapping
-                </h4>
-                <small>Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </small>
-            </div>
-            <div>
-                <div>
-                    icon
+                <div class="flex flex-row gap-[.5rem] w-[16rem] border-2 border-red-400">
+                    <div>
+                        icon
+                    </div>
+                    <div class="">
+                        <h4 class="font-medium text-[1rem] mb-[.6rem]">
+                            FARM MAPPING
+                        </h4>
+                        <p class="font-medium text-[.7rem] leading-[1.1rem]">Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </p>
+                    </div>
+                    
                 </div>
-                <h4>
-                    Farm mapping
-                </h4>
-                <small>Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </small>
-            </div>
-            <div>
-                <div>
-                    icon
+                <div class="flex flex-row gap-[.5rem] w-[16rem] border-2 border-red-400">
+                    <div>
+                        icon
+                    </div>
+                    <div class="">
+                        <h4 class="font-medium text-[1rem] mb-[.6rem]">
+                            FARM MAPPING
+                        </h4>
+                        <p class="font-medium text-[.7rem] leading-[1.1rem]">Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </p>
+                    </div>
+                    
                 </div>
-                <h4>
-                    Farm mapping
-                </h4>
-                <small>Geolocate the farm on the map and draw out any portion. Farm features will be immediately displayed. </small>
+                
             </div>
+            
         </div>
     </section>
-    <article>
+    <article class="py-[2rem]">
         <div class="container">
-            <h2>
+            <h2 class="font-bold text-[2rem] text-center">
                 Customer Review 
             </h2>
-            <div>
+            
+            <div class=" flex flex-row gap-[1rem] p-[.3rem]">
                 <div>
                     <img src="#" alt="person one">
                 </div>
-                <h4>Michael John, Farmer</h4>
-                <small>SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now</small>
+                <div class="">
+                    <h4 class="text-[1.4rem] font-semibold">Michael John, <span class="font-normal"> Farmer </span></h4>
+                    <small class="font-medium text-[.7rem]">SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now.</small>    
+                </div>
+                
             </div>
-            <div>
+            <div class=" flex flex-row gap-[1rem] p-[.3rem]">
                 <div>
                     <img src="#" alt="person one">
                 </div>
-                <h4>Michael John, Farmer</h4>
-                <small>SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now</small>
-            </div>
-                <div>
-                    <div>
-                        <img src="#" alt="person one">
-                    </div>
-                    <h4>Michael John, Farmer</h4>
-                    <small>SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now</small>
+                <div class="">
+                    <h4 class="text-[1.4rem] font-semibold">Michael John, <span class="font-normal"> Farmer </span></h4>
+                    <small class="font-medium text-[.7rem]">SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now.</small>    
                 </div>
+                
+            </div>
+            <div class=" flex flex-row gap-[1rem] p-[.3rem]">
+                <div>
+                    <img src="#" alt="person one">
+                </div>
+                <div class="">
+                    <h4 class="text-[1.4rem] font-semibold">Michael John, <span class="font-normal"> Farmer </span></h4>
+                    <small class="font-medium text-[.7rem]">SmartFarm NG is one of the best app for farmers i have seen, i have been able to increase my crop yield and i understand farming with precision better now.</small>    
+                </div>
+                
+            </div>
+            
+            
         </div>
     </article>
 
-    <section>
+    <section  class="bg-[#086558]">
         <div class="container">
-            <div>
-                <h2>Newsletter</h2>
-                <p>Do you want to know more about precision farming and our solution?</p>
+            <div class="flex flex-row gap-[2rem] items-center py-[2rem]">
+                <div>
+                    <img src="./assets/img/logodb.png" alt="logo" class="w-[12  rem]"/>
+                </div>
+                
+                    <p class="border-2 border-red-400 text-[2rem] text-white font-bold">PROVIDING SUSTAINABLE PRECISION FARMING </p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#E6E6E6]">
+        <div class="container">
+            <div class="py-[2rem]">
+                <h2 class="font-bold text-[2.8rem]">Newsletter</h2>
+                <p class="font-medium text-[.7rem] py-[.7rem]">Do you want to know more about precision farming and our solution?</p>
                 <form>
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" name="" id="name"/>
-                        <label for="name">Email:</label>
-                        <input type="text" name="" id="email"/>
+                    <div class="border-2 border-red-400">
+                        <div class="flex flex-col gap-[.6rem]">
+                            <div>
+                                <label for="name">Name:</"label>
+                                <input type="text" class="w-[100%] rounded-sm" name="" id="name"/>
+                            </div>
+                                
+                                <div>
+                                <label for="name">Email:</label>
+                                <input type="text" name="" id="email"/>
+                                </div>
+                        </div>
+                        
+
+
+                        
                         <input type="checkbox" name="" id="policy"> I have read the Privacy Policy
                         <button type="button">Send</button>
                     </div>
@@ -187,6 +246,10 @@
         </div>
     </footer>
 
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
