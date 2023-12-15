@@ -7,6 +7,7 @@ body, span, p{
 
 }
 .container{ 
+    position:relative;
     width:85%; 
     max-width:90%; 
     margin:0 auto; 
@@ -15,16 +16,20 @@ body, span, p{
 main{ 
     height:auto;
     background: url(../img/mainbg.jpg); 
-
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: #000000; */
     color:white;
-    /* opacity:.2; */
     z-index:0;    
     position: relative;
+}
+
+ul.nav > li { 
+    margin-bottom:.3rem;
+}
+
+.show-nav{ 
+    display: block ;
 }
 
 main::after{ 

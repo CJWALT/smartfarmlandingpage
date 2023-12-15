@@ -12,33 +12,38 @@
 
 <body>
 
-    <header class="bg-[#E6E6E6] py-[.6rem]">
+    <header class="bg-[#E6E6E6] relative py-[.6rem]">
         <div class="container">
             <div class="flex flex-row justify-between items-center">
                 <div class=" ">
                     <img src="./assets/img/logo.png" alt="logo" class="w-[13rem]"/>
                 </div>
                 
-                <div class="hidden">
-                    <ul class="nav">
-                        <li><a href='#'>Who we are </a></li>
-                        <li><a href='#'>Our Solutions </a</li>
-                        <li><a href='#'>contact us </a></li>
-                        <li><a href='#'>Sustainability </a></li>
-                    </ul>
-                    <select name="country" id="">
-                        <option value="ng">Nigeria</option>
-                        <option value="kr">Korea</option>
-                    </select>
+                <div class="nav-bar absolute hidden bg-white rounded-[.7rem] right-0 top-[2.6rem] z-30 overflow-hidden px-[1rem] py-[.4rem]">
+                    <div class="">
+                        <ul class="nav">
+                            <li><a class="font-semibold" href='#'>Who we are </a></li>
+                            <li><a class="font-semibold" href='#'>Our Solutions </a</li>
+                            <li><a class="font-semibold" href='#'>Contact Us </a></li>
+                            <li><a class="font-semibold" href='#'>Sustainability </a></li>
+                        </ul>
+                        <select name="country" id="" class="border-2 rounded-[.7rem] p-2 border-txtGreen">
+                            <option value="ng">Nigeria</option>
+                            <option value="kr">Korea</option>
+                        </select>
+                    </div>
+    
+                    <div class="flex flex-col font-medium text-white mt-[.7rem] gap-[.2rem] items-center">
+                        <a class="bg-txtGreen px-5 py-1 rounded-md" href='https://smartfarm-ng.vercel.app/'>Login</a>
+                        <a class="bg-txtGreen px-5 py-1 rounded-md" href='https://smartfarm-ng.vercel.app/signup'>Sign Up</a>
+                    </div>
+                    
                 </div>
+
                 <div>
-                    <ion-icon class="leading-none text-[2.6rem] cursor-pointer" name="menu-outline"></ion-icon>
-                      
+                    <ion-icon id="nav-menu" class="leading-none text-[2.6rem] cursor-pointer" name="menu-outline"></ion-icon>
                 </div>
-                <div class="hidden">
-                    <a href='https://smartfarm-ng.vercel.app/'>Login</a>
-                    <a href='https://smartfarm-ng.vercel.app/signup'>Sign Up</a>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -50,7 +55,7 @@
                 <span class="top-right text-xl z-20 font-semibold">Ease</span>
             </div>
             <div class="flex justify-center">
-                <button type="button" class="bg-green-200 z-20 px-10 font-semibold font-[Lato] py-[.4rem] rounded-md">Get Started Now</button>
+                <a href='https://smartfarm-ng.vercel.app/' class="bg-green-200 z-20 px-10 font-semibold font-[Lato] py-[.4rem] rounded-md">Get Started Now</a>
             </div>
         </div>
     </main>
@@ -210,34 +215,31 @@
                 <h2 class="font-bold text-[2.8rem]">Newsletter</h2>
                 <p class="font-medium text-[.7rem] py-[.7rem]">Do you want to know more about precision farming and our solution?</p>
                 <form>
-                    <div class="border-2 border-red-400">
+                    <div class="">
                         <div class="flex flex-col gap-[.6rem]">
                             <div>
                                 <label for="name">Name:</"label>
-                                <input type="text" class="w-[100%] rounded-sm" name="" id="name"/>
+                                <input type="text" class="w-[100%] rounded-sm mt-[.2rem]" name="" id="name"/>
                             </div>
                                 
                                 <div>
                                 <label for="name">Email:</label>
-                                <input type="text" name="" id="email"/>
+                                <input type="text" name="" class="w-[100%] rounded-sm mt-[.2rem]" id="email"/>
                                 </div>
                         </div>
-                        
-
-
-                        
-                        <input type="checkbox" name="" id="policy"> I have read the Privacy Policy
-                        <button type="button">Send</button>
+                         <input type="checkbox" name="" id="policy" />
+                         <label for="privacy" class="font-medium text-[.8rem] text-[#086558]">I have read the privacy policy.</label>
+                        <button type="button" class="block py-[.6rem] px-[1.4rem] border-2 border-[#086558] rounded-[.9rem] mt-[1rem]">Send</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="py-[3rem] ">
         <div class="container">
             <div>
-                <ul class="foo-nav">
+                <ul class="foo-nav flex flex-row gap-[1rem] text-[#086558] font-medium text-[1.4rem]">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Cookies</a></li>
                     <li><a href="#">Copyright</a></li>
@@ -248,6 +250,7 @@
 
 
 
+<script src="main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
